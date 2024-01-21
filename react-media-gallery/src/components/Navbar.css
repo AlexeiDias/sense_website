@@ -1,0 +1,22 @@
+.navbar {
+    /* ... existing styles ... */
+  }
+  
+  .navbar-collapse {
+    justify-content: center;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .nav-link {
+    padding: 0 15px; /* Adjust spacing around links as needed */
+  }
+  

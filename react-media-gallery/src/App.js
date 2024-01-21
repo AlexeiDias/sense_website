@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CustomNavbar from './components/Navbar';
+import SecondaryNavbar from './components/SecondaryNavbar'; // Correct this import
+import VideoGallery from './components/VideoGallery';
+import PhotoGallery from './components/PhotoGallery';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+// ... rest of your App.js code ...
+
+
 function App() {
+  const [activeGallery, setActiveGallery] = useState('photo'); // 'photo' or 'video'
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <CustomNavbar />
+      <SecondaryNavbar /> {/* Add SecondaryNavbar here */}
+      <header>
+        {/* Rest of your code */}
       </header>
+      {activeGallery === 'photo' ? <PhotoGallery /> : <VideoGallery />}
     </div>
   );
 }

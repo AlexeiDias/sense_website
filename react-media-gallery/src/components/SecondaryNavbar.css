@@ -1,0 +1,18 @@
+.secondary-navbar {
+    background-color: white !important; /* Override any other styles to ensure the navbar is white */
+    width: 100vw; /* Stretch to the full viewport width */
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  /* Increase spacing between the elements */
+  .secondary-navbar .navbar-nav .nav-link {
+    margin-right: 20px; /* Increase right margin */
+    margin-left: 20px; /* Increase left margin */
+  }
+  
+  /* Ensure that the social media icons have padding */
+  .secondary-navbar .bi {
+    padding-right: 5px; /* Add padding to the right of icons */
+  }
+  
