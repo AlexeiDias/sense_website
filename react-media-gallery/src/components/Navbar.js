@@ -1,26 +1,29 @@
 import React from 'react';
 import { Navbar, Container, Row, Col } from 'react-bootstrap';
+import './Navbar.css';
 
 const CustomNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Container>
-        <Row className="w-100 align-items-center">
-          <Col className="d-flex justify-content-center">
+      <Container className="mx-auto">
+        <Row className="align-items-center">
+          <Col xs={12} md={4} className="brand-section">
             <Navbar.Brand href="#home">
-              <img
-                src="/logo2.png"
-                width="100"
-                height="100"
-                className="d-inline-block align-top"
-                alt="Your Brand Logo"
-              />
-              {' '}Virtual Sense
+              <span className="brand-text">Virtual Sense</span>
             </Navbar.Brand>
           </Col>
-          <Col className="d-flex justify-content-center">
-            <div className="navbar-text">Your single line of text here</div>
+          <Col xs={12} md={3} className="logo-section">
+            <img
+              src="/logo14.png"
+              className="logo"
+              alt="Your Brand Logo"
+             
+            />
           </Col>
+          <Col xs={12} md={5} className="navbar-text">
+            Reviving Moments, Crafting History – Our 3D virtual tours aren't just about exploring spaces; they're about capturing life's chapters, creating a timeless virtual history to journey back through the wonders of technology.
+          </Col>
+         
         </Row>
       </Container>
     </Navbar>

@@ -1,22 +1,43 @@
+/* Full width navbar */
 .navbar {
-    /* ... existing styles ... */
+  width: 100%;
+}
+
+/* Brand section */
+.brand-section .navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align items to the left */
+}
+
+.brand-text {
+  font-family: 'Bruno Ace SC', sans-serif; /* Add this line */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+/* Navbar text styling */
+.navbar-text {
+  word-break: break-word; /* Ensure text doesn't overflow */
+  line-height: 1.5; /* Adjust line height */
+  font-size: 1rem; /* Unified font size */
+}
+
+/* Logo styling */
+.logo-section .logo {
+  width: 200px; /* Adjusted logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 576px) {
+  .brand-text {
+    font-size: 1rem; /* Smaller font size */
   }
-  
-  .navbar-collapse {
-    justify-content: center;
+  .navbar-text {
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Adjusted padding */
+    font-size: 0.8rem; /* Smaller font size */
   }
-  
-  .navbar-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .navbar-nav {
-    flex-direction: row;
-  }
-  
-  .nav-link {
-    padding: 0 15px; /* Adjust spacing around links as needed */
-  }
-  
+}

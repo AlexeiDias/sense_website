@@ -1,25 +1,21 @@
 import React, { useState } from 'react';
 import CustomNavbar from './components/Navbar';
-import SecondaryNavbar from './components/SecondaryNavbar'; // Correct this import
-import VideoGallery from './components/VideoGallery';
-import PhotoGallery from './components/PhotoGallery';
+import SecondaryNavbar from './components/SecondaryNavbar';
+import VideoJumbotron from './components/VideoJumbotron'; // Import the new Jumbotron component
+import AboutUsText from './components/AboutUsText'; // Import the new text area component
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-// ... rest of your App.js code ...
-
-
 function App() {
-  const [activeGallery, setActiveGallery] = useState('photo'); // 'photo' or 'video'
+  const [activeGallery, setActiveGallery] = useState('photo');
 
   return (
     <div className="App">
       <CustomNavbar />
-      <SecondaryNavbar /> {/* Add SecondaryNavbar here */}
-      <header>
-        {/* Rest of your code */}
-      </header>
-      {activeGallery === 'photo' ? <PhotoGallery /> : <VideoGallery />}
+      <SecondaryNavbar />
+      <VideoJumbotron />
+      <AboutUsText /> {/* Include the About Us text area here */}
+      {/* Other components */}
     </div>
   );
 }

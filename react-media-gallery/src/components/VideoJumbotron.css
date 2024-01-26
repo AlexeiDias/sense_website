@@ -1,0 +1,16 @@
+.jumbotron {
+  padding: 0 !important; /* Remove padding */
+  margin: 0 !important; /* Remove margin if there's any */
+}
+
+.jumbotron .container {
+  padding: 0 !important; /* Remove padding of the container */
+}
+
+.jumbotron-video {
+  width: 100vw; /* Sets video width to full viewport width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: -50vw; /* Center the video */
+  position: relative;
+  left: 50%;
+}

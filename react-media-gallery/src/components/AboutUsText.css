@@ -1,0 +1,21 @@
+.about-us-text {
+    padding: 100px;
+    margin-top: -20px; /* Optional: to move it closer to the Jumbotron */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color for readability */
+    text-align: justify;
+  }
+  
+  .about-us-text h2 {
+    text-align: center;
+    color: #8cd2cc; /* Use a color that matches your theme */
+  }
+  
+  .about-us-text p {
+    padding: 30px;
+    margin-bottom: 1rem;
+    line-height: 2; /* Increase the line height */
+    background-color: #8cd2cc;
+   opacity: 0.8;
+  }
+  
