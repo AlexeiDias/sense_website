@@ -21,7 +21,7 @@ const CardGroupComponent = () => {
           
               
               <iframe 
-                 
+                width="250" 
                 src={card.iframeSrc} 
                 frameborder="0" 
                 allowfullscreen 
