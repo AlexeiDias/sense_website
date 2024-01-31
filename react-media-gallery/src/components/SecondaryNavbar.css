@@ -1,38 +1,37 @@
 .secondary-navbar {
-    background-color: #8cd2cc; /* Ensure navbar is white */
-    width: 100%; /* Full width */
-    margin-right: 0;
-    margin-left: 0;
-  }
-  
-  /* Increase font size for nav links */
-  .secondary-navbar .nav-link {
-    display: inline-block; /* Align items in a row */
-    margin: 0 20px; /* Spacing between items */
-    font-size: 1.50rem; /* Increase the font size */
-  }
-  
-  /* If you want to style the icons specifically */
-  .secondary-navbar .nav-icon-item .bi {
-    padding-right: 5px; /* Space between icon and text */
-    /* Optionally set a different size for icons if needed */
-    font-size: 1.5rem;
-  }
+  background-color: #8cd2cc; /* Ensure navbar is white */
+  width: 100%; /* Full width */
+  margin-right: 0;
+  margin-left: 0;
+}
 
-  /* Facebook icon color */
+/* Increase font size for nav links */
+.secondary-navbar .nav-link {
+  display: inline-block; /* Align items in a row */
+  margin: 0 20px; /* Spacing between items */
+  font-size: 1.50rem; /* Increase the font size */
+}
+
+/* If you want to style the icons specifically */
+.secondary-navbar .nav-icon-item .bi {
+  padding-right: 5px; /* Space between icon and text */
+  /* Optionally set a different size for icons if needed */
+  font-size: 1.5rem;
+}
+
+/* Facebook icon color */
 .secondary-navbar .bi-facebook {
-    color: #3b5998;
-  }
-  
-  /* Instagram icon color - using a single color from the gradient */
-  .secondary-navbar .bi-instagram {
-    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  /* YouTube icon color */
-  .secondary-navbar .bi-youtube {
-    color: #FF0000;
-  }
-  
+  color: #3b5998;
+}
+
+/* Instagram icon color - using a single color from the gradient */
+.secondary-navbar .bi-instagram {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* YouTube icon color */
+.secondary-navbar .bi-youtube {
+  color: #FF0000;
+}

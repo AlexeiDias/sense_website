@@ -1,0 +1,16 @@
+.custom-card {
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure cards take full width of the column */
+  .custom-card .card {
+    width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .custom-card .card {
+      margin-bottom: 15px;
+    }
+  }
+  

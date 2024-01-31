@@ -3,6 +3,7 @@ import CustomNavbar from './components/Navbar';
 import SecondaryNavbar from './components/SecondaryNavbar';
 import VideoJumbotron from './components/VideoJumbotron'; // Import the new Jumbotron component
 import AboutUsText from './components/AboutUsText'; // Import the new text area component
+import CardGroupComponent from './components/CardGroupComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
@@ -15,6 +16,7 @@ function App() {
       <SecondaryNavbar />
       <VideoJumbotron />
       <AboutUsText /> {/* Include the About Us text area here */}
+      <CardGroupComponent />
       {/* Other components */}
     </div>
   );

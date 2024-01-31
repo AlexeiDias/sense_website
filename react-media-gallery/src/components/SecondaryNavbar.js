@@ -6,6 +6,7 @@ const SecondaryNavbar = () => {
   return (
     <Navbar  expand="lg" className="secondary-navbar">
       <Nav className="mx-auto">
+      
         <Nav.Link href="#services" className="nav-text-item">Services</Nav.Link>
         <Nav.Link href="#pricing" className="nav-text-item">Pricing</Nav.Link>
         <Nav.Link href="#about-us" className="nav-text-item">Contact us</Nav.Link>
@@ -22,5 +23,4 @@ const SecondaryNavbar = () => {
     </Navbar>
   );
 };
-
 export default SecondaryNavbar;
