@@ -9,9 +9,16 @@ import ResidentialComponent from './components/ResidentialComponent';
 import BusinessComponent from './components/BusinessComponent';
 import DevelopmentProcess from './components/DevelopmentProcess';
 import EssentialFuture from './components/EssentialFuture';
+import ResidentialPricing from './components/ResidentialPricing';
+import CommercialPricing from './components/CommercialPricing';
+import BusinessPricing from './components/BusinessPricing';
+import PeopleComponent from './components/PeopleComponent';
+import PeoplePricing from './components/PeoplePricing';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import PeopleComponent from './components/PeopleComponent';
+
+
 
 function App() {
   const [activeGallery, setActiveGallery] = useState('photo');
@@ -29,6 +36,10 @@ function App() {
       <PeopleComponent />
       <DevelopmentProcess />
       <EssentialFuture />
+      <ResidentialPricing />
+      <CommercialPricing />
+      <BusinessPricing />
+      <PeoplePricing />
       {/* Other components */}
     </div>
   );
