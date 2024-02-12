@@ -10,12 +10,12 @@ const PeopleHighLights = () => {
         <Col md={4} className="text-center">
         <h1><i class="bi bi-bullseye title"></i></h1>
           <h3>Realism and Accuracy</h3>
-          <p>3D scanning can create highly accurate and detailed models of clothing and accessories, allowing customers to see how these items would look on their avatars in a virtual space. This realism goes beyond current 2D images and basic 3D models, offering a more immersive and informative shopping experience.</p>
+          <p>This realism goes beyond current 2D images and basic 3D models, offering a more immersive and informative shopping experience.</p>
         </Col>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-sunglasses title"></i></h1>
           <h3>Virtual Fashion Shows</h3>
-          <p>Designers can use 3D scanning and VR to showcase their collections in virtual fashion shows, accessible to a global audience. This not only reduces the logistical costs and environmental impact of traditional shows but also allows for creative presentations that would be impossible in the physical world.</p>
+          <p>Designers can use 3D scanning and VR to showcase their collections in virtual fashion shows, accessible to a global audience.</p>
         </Col>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-badge-ad-fill title"></i></h1>
