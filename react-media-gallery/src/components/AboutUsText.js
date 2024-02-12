@@ -1,21 +1,35 @@
 import React from 'react';
-import './AboutUsText.css'; // Make sure to create this CSS file
+import { Container, Row, Col } from 'react-bootstrap';
+import './AboutUsText.css';
 
-const AboutUsText = () => {
+
+const AboutUs = () => {
   return (
-    <div className="about-us-text">
-      <h2>About Virtual Sense</h2>
-      <p>
-        At Virtual Sense, we transcend the boundaries of space by crafting state-of-the-art 3D immersive virtual tours. Since our inception in 2018, we've been pioneering virtual exploration, empowering real estate businesses, tourism, and event venues with the ability to showcase their spaces like never before. Our commitment lies in delivering an unparalleled virtual presence that captures the essence and ambiance of physical locations.
+    <Container className='AboutUsText'>
+      <Row className="align-items-center">
+        <Col md={6}>
+          <img
+            width="100%" 
+            height="100%" 
+            src="/AboutUsText.png" 
+           
+            >
+          </img>
+        </Col>
+        <Col className='about-us-text'  md={6}>
+          <h2 className='title'>WHAT WE DO</h2>   
+          <p>At Virtual Sense, we transcend the boundaries of space by crafting state-of-the-art <span style={{fontWeight: 'bold', fontSize: '20px'}}>3D immersive virtual tours</span>. Since our inception in 2018, we've been pioneering <span style={{fontWeight: 'bold', fontSize: '20px'}}>virtual exploration</span>, empowering real estate businesses, tourism, and event venues with the ability to showcase their spaces like never before. Our <span style={{fontWeight: 'bold', fontSize: '20px'}}>commitment</span> lies in delivering an unparalleled <span style={{fontWeight: 'bold', fontSize: '20px'}}>virtual presence</span> that captures the essence and ambiance of physical locations.
 
-With a footprint both in the US and internationally, we pride ourselves on broadening horizons and unlocking potential across the globe. Our team of expert designers and technologists harmonize artistry with innovation to bring distant spaces to your fingertips, offering an engaging and interactive experience that is second to none.
+With a footprint both in the US and internationally, we pride ourselves on broadening horizons and unlocking potential across the globe. 
 
-Join us at Virtual Sense, where your next journey is just a click away – no passport required.
-        {/* Add the rest of your about us content here */}
-      </p>
-      {/* More paragraphs as needed */}
-    </div>
+<span style={{fontWeight: 'bold', fontSize: '20px'}}>Join us at Virtual Sense</span>, where your next journey is just a click away – no passport required.
+
+</p>
+            
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
-export default AboutUsText;
+export default AboutUs;

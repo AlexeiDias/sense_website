@@ -1,44 +1,114 @@
 import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 
-const EssentialFutures = () => {
+
+
+
+const EssentialFeatures = () => {
   return (
-    <div className="essential-futures">
-      <h2>Essentials</h2>
-      {/* First Row */}
-      <Row xs={1} md={3} className="g-4">
-        {[...Array(3)].map((_, idx) => (
-          <Col key={idx}>
-            <Card>
-              <Card.Img variant="top" src="image_src_here" />
-              <Card.Body>
-                <Card.Title>Card Title {idx + 1}</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+    <div className="essential-features align-items-center">
+      <Row  className="g-4">
+      <div class="card-group">
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+      <h5 className="card-title">Dollhouse</h5>
+      <p className="card-text">The dollhouse view is the crown jewel of Matterport's 3D space exploration, offering an unparalleled bird's eye perspective that instantly captures the layout and dimensions of any property.</p>
+      
+    </div>
+  </div>
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+    <h5 className="card-title">Highlight Reels</h5>
+      <p className="card-text">You create a slideshow of destinations within the space, guiding users from view to view</p>
+      
+    </div>
+  </div>
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+      <h5 className="card-title">360 Photos</h5>
+      <p className="card-text">Listings that feature 3D tours stand out in crowded real estate markets. They signal to buyers that the agent or seller is employing the latest technology to provide the best possible buying experience.</p>
+      
+    </div>
+  </div>
+</div>
       </Row>
-      {/* Second Row */}
-      <Row xs={1} md={3} className="g-4 mt-3">
-        {[...Array(3)].map((_, idx) => (
-          <Col key={idx + 3}>
-            <Card>
-              <Card.Img variant="top" src="image_src_here" />
-              <Card.Body>
-                <Card.Title>Card Title {idx + 4}</Card.Title>
-                <Card.Text>
-                  This is a wider card with supporting text below as a natural lead-in to additional content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+      <Row  className="g-4">
+      <div class="card-group">
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+      <h5 className="card-title">QR Code</h5>
+      <p className="card-text">Show your Matterport model in your printed marketing materials by converting the URL into a QR code.
+
+Then copy and paste the QR code onto your flyers and other materials. Your intended audience can scan the QR code with their smartphone and explore the Matterport Space with their phone.</p>
+      
+    </div>
+  </div>
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+    <h5 className="card-title">Google Street View</h5>
+      <p className="card-text">Publishing to Google Street View is an exciting new way for you to extend your marketing so you and your business can reach an even bigger audience.</p>
+      
+    </div>
+  </div>
+  <div className="card">
+  <iframe 
+            width="100%" 
+            height="400" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+    <div className="card-body">
+      <h5 className="card-title">Mattertags</h5>
+      <p className="card-text">Use Tags to call out features, provide additional details, and generally add context to different aspects of your Matterport Space. Tags help you tell the story of your space, giving visitors the information they need.</p>
+      
+    </div>
+  </div>
+</div>
       </Row>
     </div>
   );
 };
 
-export default EssentialFutures;
+export default EssentialFeatures;

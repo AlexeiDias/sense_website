@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import './CardGroupComponent.css';
 
+
 const CardGroupComponent = () => {
   // Array representing card data including different iframe URLs
   const cards = [
@@ -14,21 +15,25 @@ const CardGroupComponent = () => {
   ];
 
   return (
-    <Row>
+    <Row className='CardRow'>
       {cards.map((card) => (
         <Col md={2} sm={4} xs={6} key={card.id}>
-          <Card className="custom-card">
+          
+          
+          
           
               
-              <iframe 
-                width="250" 
-                src={card.iframeSrc} 
-                frameborder="0" 
-                allowfullscreen 
-                allow="xr-spatial-tracking">
-              </iframe>
+          <iframe 
+            width="250" 
+            src={card.iframeSrc} 
+            frameborder="0" 
+            allowfullscreen 
+            allow="xr-spatial-tracking">
+          </iframe>
+        
+     
             
-          </Card>
+         
         </Col>
       ))}
     </Row>

@@ -1,32 +1,25 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import './PeopleComponent.css'
 
 const PeopleComponent = () => {
   return (
-    <Container>
+    <Container >
       <Row className="align-items-center">
-        
-        <Col md={6}>
-          <h2>People Scanning</h2>   
-          <p>Virtual tours in the real estate industry revolutionize how properties are marketed and sold, offering distinctive advantages for both realtors and potential buyers. Here's a concise explanation of the benefits:
-</p>
-            <ul>
-                <li>24/7 Open House: Virtual tours provide an always-open house that potential buyers can visit at their convenience, removing the need for scheduling and travel.</li>
-                <li>Wider Reach: They enable realtors to reach a broader audience, including international buyers, by offering an immersive viewing experience that's accessible from anywhere in the world.</li>
-                <li>Increased Engagement: Interactive and engaging, virtual tours keep potential buyers on listings longer, providing them with a comprehensive view of the property and its features.</li>
-                <li>Emotional Connection: Virtual tours can help buyers form an emotional connection to a property, imagining themselves living in the space, which can accelerate the decision-making process.</li>
-                <li>Cost-Effective Marketing: They are a cost-effective marketing tool, eliminating the need for multiple in-person showings and open houses, while maximizing the property's exposure.</li>
-            </ul>
-        </Col>
         <Col md={6}>
           <iframe 
             width="100%" 
             height="400" 
-            src="https://my.matterport.com/show/?m=zYzoTXMyCKH" 
+            src="https://my.matterport.com/show/?m=nFXjkP6meiR" 
             frameborder="0" 
             allowfullscreen 
             allow="xr-spatial-tracking">
           </iframe>
+        </Col>
+        <Col className='container' md={6}>
+          <h2 className='title text-center mb-4 title'>People Scanning</h2>   
+          <p> It leverages the <span style={{fontWeight: 'bold', fontSize: '20px'}}>emotional</span> weight of significant <span style={{fontWeight: 'bold', fontSize: '20px'}}>life moments</span> and the allure of cutting-edge technology, offering a unique way for people to <span style={{fontWeight: 'bold', fontSize: '20px'}}>revisit</span> and relive their most cherished <span style={{fontWeight: 'bold', fontSize: '20px'}}>memories</span>. 3D scanning and virtual reality (VR) in <span style={{fontWeight: 'bold', fontSize: '20px'}}>fashion modeling</span> and for <span style={{fontWeight: 'bold', fontSize: '20px'}}>clothing and accessory sales</span> holds tremendous potential, promising to revolutionize the way consumers interact with fashion. This technology could significantly <span style={{fontWeight: 'bold', fontSize: '20px'}}>enhance</span> the online <span style={{fontWeight: 'bold', fontSize: '20px'}}>shopping experience, improve customer satisfaction</span>, and open new avenues for creative expression and marketing within the fashion industry.</p>
+            
         </Col>
       </Row>
     </Container>

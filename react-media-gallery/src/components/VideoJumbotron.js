@@ -7,7 +7,7 @@ const VideoJumbotron = () => {
       <div className="container">
         <video className="jumbotron-video" width="100%" autoPlay loop muted>
           <source src="/552.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          
         </video>
       </div>
     </div>

@@ -1,0 +1,44 @@
+.title .hospitalityIcons{
+    color: #8cd2cc;
+  }
+  
+  .my-5{
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  
+  .image-column{
+    /* display: flex; */
+     /*align-items: flex-start; Align items to the top */
+     /*justify-content: center; /* Center the content */
+    padding: 50px; /* Padding around the container */
+  }
+  
+  
+  
+  .about-us-text {
+    font-family: 'Barlow', sans-serif; /* Add this line */
+    flex: 1; /* Takes up the other half of the space */
+    max-width: 50%; /* Maximum width of 50% */
+    /* Your existing styles */
+    padding: 30px; /* Adjust padding as needed */
+    margin-top: 0; /* Reset the top margin if not needed */
+    background-color: #fff; /* White background */
+    color: #333; /* Dark text color for readability */
+    text-align: justify;
+    opacity: 0.8; /* Adjust opacity as needed */
+  }
+  
+
+  
+  /* Add responsive behavior */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column; /* Stack the image and text on small screens */
+    }
+  
+    .image-column, .about-us-text {
+      max-width: 100%; /* Each column takes the full width on small screens */
+    }
+  }
+  

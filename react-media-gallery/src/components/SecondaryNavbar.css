@@ -1,4 +1,7 @@
+
+
 .secondary-navbar {
+  
   background-color: #8cd2cc; /* Ensure navbar is white */
   width: 100%; /* Full width */
   margin-right: 0;
@@ -13,7 +16,7 @@
 }
 
 /* If you want to style the icons specifically */
-.secondary-navbar .nav-icon-item .bi {
+.secondary-navbar .nav-icon-item .bi  {
   padding-right: 5px; /* Space between icon and text */
   /* Optionally set a different size for icons if needed */
   font-size: 1.5rem;

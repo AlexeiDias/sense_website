@@ -21,8 +21,9 @@ const CustomNavbar = () => {
             />
           </Col>
           <Col xs={12} md={5} className="navbar-text">
-            Reviving Moments, Crafting History – Our 3D virtual tours aren't just about exploring spaces; they're about capturing life's chapters, creating a timeless virtual history to journey back through the wonders of technology.
+           <p>Reviving Moments, Crafting History – Our 3D virtual tours aren't just about exploring spaces; they're about capturing life's chapters, creating a timeless virtual history to journey back through the wonders of technology.</p> 
           </Col>
+          
          
         </Row>
       </Container>

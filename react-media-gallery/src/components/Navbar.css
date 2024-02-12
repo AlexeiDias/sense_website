@@ -19,9 +19,11 @@
 
 /* Navbar text styling */
 .navbar-text {
+  font-family: 'NTR', sans-serif; /* Add this line */
   word-break: break-word; /* Ensure text doesn't overflow */
   line-height: 1.5; /* Adjust line height */
-  font-size: 1rem; /* Unified font size */
+  font-size: 1.4rem; /* Unified font size */
+  
 }
 
 /* Logo styling */
