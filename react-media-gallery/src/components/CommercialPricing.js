@@ -1,5 +1,6 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import {  Row } from 'react-bootstrap';
+import './Styles.css';
 
 
 const CommercialPricing = () => {
@@ -7,7 +8,7 @@ const CommercialPricing = () => {
     <div className="CommercialPricing">
       <Row  className="g-4">
       <div class="card-group">
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -17,7 +18,7 @@ const CommercialPricing = () => {
             allow="xr-spatial-tracking">
           </iframe>
     <div className="card-body">
-      <h5 className="card-title">QR Code</h5>
+      <h5 className="title">QR Code</h5>
       <p className="card-text">Show your Matterport model in your printed marketing materials by converting the URL into a QR code.
 
 Then copy and paste the QR code onto your flyers and other materials. Your intended audience can scan the QR code with their smartphone and explore the Matterport Space with their phone.</p>
@@ -25,7 +26,7 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
 
     </div>
   </div>
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -35,13 +36,13 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
             allow="xr-spatial-tracking">
           </iframe>
     <div className="card-body">
-    <h5 className="card-title">Google Street View</h5>
+    <h5 className="title">Google Street View</h5>
       <p className="card-text">Publishing to Google Street View is an exciting new way for you to extend your marketing so you and your business can reach an even bigger audience.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
 
     </div>
   </div>
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -51,7 +52,7 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
             allow="xr-spatial-tracking">
           </iframe>
     <div className="card-body">
-      <h5 className="card-title">Mattertags</h5>
+      <h5 className="title">Mattertags</h5>
       <p className="card-text">Use Tags to call out features, provide additional details, and generally add context to different aspects of your Matterport Space. Tags help you tell the story of your space, giving visitors the information they need.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
 
@@ -59,8 +60,8 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
   </div>
 </div>
       </Row>
-      <p>
-        <h6>What’s Included:</h6>
+      <p className='whatsIncluded'>
+        <h4>What’s Included:</h4>
         <ul>
         <li>3D Virtual Tour links to promote your space online</li>
         <li>QR Code to add your 3D Virtual Tour to your printed materials</li>

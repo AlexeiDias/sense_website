@@ -1,12 +1,13 @@
 import React from 'react';
-import { Card, Row, Col } from 'react-bootstrap';
+import {Row} from 'react-bootstrap';
+import './WhatsIncluded.css';
 
 const CommercialPricing = () => {
   return (
     <div className="CommercialPricing">
       <Row  className="g-4">
       <div class="card-group">
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -24,7 +25,7 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
 
     </div>
   </div>
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -40,7 +41,7 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
 
     </div>
   </div>
-  <div className="card">
+  <div className="card text-center">
   <iframe 
             width="100%" 
             height="400" 
@@ -58,8 +59,8 @@ Then copy and paste the QR code onto your flyers and other materials. Your inten
   </div>
 </div>
       </Row>
-      <p>
-        <h6>What’s Included:</h6>
+      <p className='whatsIncluded'>
+        <h4>What’s Included:</h4>
         <ul>
         <li>3D Virtual Tour links to promote your space online</li>
         <li>QR Code to add your 3D Virtual Tour to your printed materials</li>
