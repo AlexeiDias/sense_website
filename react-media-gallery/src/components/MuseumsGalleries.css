@@ -1,0 +1,33 @@
+
+
+
+
+.my-5{
+    padding-top: 25px;
+    padding-bottom: 50px;
+  }
+  
+  .image-column{
+    /* display: flex; */
+     /*align-items: flex-start; Align items to the top */
+     /*justify-content: center; /* Center the content */
+    padding: 50px; /* Padding around the container */
+  }
+  
+  
+  
+ 
+  
+
+  
+  /* Add responsive behavior */
+  @media (max-width: 768px) {
+    .about-us-container {
+      flex-direction: column; /* Stack the image and text on small screens */
+    }
+  
+    .image-column, .about-us-text {
+      max-width: 100%; /* Each column takes the full width on small screens */
+    }
+  }
+  

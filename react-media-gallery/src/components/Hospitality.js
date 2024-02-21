@@ -1,9 +1,10 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Hospitality.css'
+import './Styles.css';
 
 
-const TwoColumnComponent = () => {
+
+const Hospitality = () => {
   return (
     <Container >
       <Row className="align-items-center">
@@ -17,8 +18,12 @@ const TwoColumnComponent = () => {
             allow="xr-spatial-tracking">
           </iframe>
         </Col>
-        <Col className='container fontBarlow' md={6}>
-          <h2 className='title text-center mb-4 title'>HOSPITALITY</h2>   
+        <Col className='container text-center' md={6}>
+        
+        <h1><i class="material-symbols-outlined iconColor">
+account_balance
+</i></h1>
+          <h2 className='titleColor'>Hospitality</h2>   
           <p>Virtual tours offer a <span style={{fontWeight: 'bold', fontSize: '20px'}}>transformative approach</span> for the <span style={{fontWeight: 'bold', fontSize: '20px'}}>hospitality industry</span>, allowing potential guests <span style={{fontWeight: 'bold', fontSize: '20px'}}>to explore</span> hotels, resorts, and other <span style={{fontWeight: 'bold', fontSize: '20px'}}>accommodations</span> before making a booking. This <span style={{fontWeight: 'bold', fontSize: '20px'}}>immersive experience</span> can significantly <span style={{fontWeight: 'bold', fontSize: '20px'}}>enhance a customer's decision-making</span> process by providing a realistic preview of what they can expect during their stay. Here's how virtual tours can be beneficial:
 
 </p>
@@ -29,4 +34,4 @@ const TwoColumnComponent = () => {
   );
 };
 
-export default TwoColumnComponent;
+export default Hospitality;

@@ -20,7 +20,7 @@ const DevelopmentProcess = () => {
         </Col>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-share-fill"></i></h1>
-          <h3>SHARE YOUR SPACE</h3>
+          <h3>Share Your Space</h3>
           <p>Easily share your immersive 3D worlds via email, SMS, or directly on your favorite social media and professional networking platforms. Publish on your marketing channels or embed them into your website to captivate your audience.</p>
         </Col>
       </Row>

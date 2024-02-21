@@ -1,18 +1,33 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import './SecondaryNavbar.css';
+import CustomModal from './CustomModal'; // Import CustomModal
 
 const SecondaryNavbar = () => {
   return (
-    <Navbar  expand="lg" className="secondary-navbar sticky-top">
+    <Navbar expand="lg" className="secondary-navbar sticky-top">
       <Nav className="mx-auto">
       
-        <Nav.Link href="#services" className="nav-text-item">Services</Nav.Link>
-        <Nav.Link href="#pricing" className="nav-text-item">Pricing</Nav.Link>
-       
-        <Nav.Link href="tel:4157059104" className="nav-text-item"> <i className="bi bi-phone-vibrate-fill"></i> (415)4059104
+        {/* Services Dropdown */}
+        <NavDropdown title="Services" id="nav-dropdown-services" className="nav-text-item">
+          <a className="dropdown-item" href="#real-state">Real State</a>
+          <a className="dropdown-item" href="#business">Business???</a>
+          <a className="dropdown-item" href="#people">People</a>
+        </NavDropdown>
+
+        {/* Pricing Dropdown */}
+        <NavDropdown title="Pricing" id="nav-dropdown-pricing" className="nav-text-item">
+          <a className="dropdown-item" href="#residential-real-state">Residential Real State</a>
+          <a className="dropdown-item" href="#commercial-real-state">Commercial Real State</a>
+          <a className="dropdown-item" href="#business-pricing">Business</a>
+          <a className="dropdown-item" href="#people-pricing">People</a>
+        </NavDropdown>
+
+        <Nav.Link href="tel:4157059104" className="nav-text-item"> 
+          <i className="bi bi-phone-vibrate-fill"></i> (415)4059104
         </Nav.Link>
-        <Nav.Link href="tel:4157059104" className="nav-text-item"><i class="bi bi-envelope-at-fill"></i> tataborba@hotmail.com
+        <Nav.Link href="mailto:tataborba@hotmail.com" className="nav-text-item">
+          <i className="bi bi-envelope-fill"></i> tataborba@hotmail.com
         </Nav.Link>
         <Nav.Link href="https://www.facebook.com" className="nav-icon-item">
           <i className="bi bi-facebook"></i>
@@ -23,8 +38,12 @@ const SecondaryNavbar = () => {
         <Nav.Link href="https://www.youtube.com" className="nav-icon-item">
           <i className="bi bi-youtube"></i>
         </Nav.Link>
+
+        {/* Replace the Contact Form link with CustomModal component */}
+        <CustomModal />
       </Nav>
     </Navbar>
   );
 };
+
 export default SecondaryNavbar;

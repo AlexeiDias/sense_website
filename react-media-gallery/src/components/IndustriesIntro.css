@@ -1,0 +1,10 @@
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .media-container {
+      flex-direction: column; /* Stack the image and text on small screens */
+    }
+  
+    .image-column, .media-text {
+      max-width: 100%; /* Each column takes the full width on small screens */
+    }
+  }

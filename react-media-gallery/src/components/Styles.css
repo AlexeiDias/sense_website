@@ -1,8 +1,23 @@
-.title {
-    color: #8cd2cc;
+body {
+  font-family: 'Barlow', sans-serif; /* Add this line */
+}
+
+.container{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.titleColor {
+    color: #7b0e7d;
+    
   }
-  p .fontBarlow {
-    font-family: 'Barlow', sans-serif; /* Add this line */
+
+.iconColor {
+  color: #8cd2cc;
+}
+
+p {
+    
     flex: 1; /* Takes up the other half of the space */
     max-width: 50%; /* Maximum width of 50% */
     /* Your existing styles */
@@ -12,6 +27,10 @@
     color: #333; /* Dark text color for readability */
     text-align: justify;
     opacity: 0.8; /* Adjust opacity as needed */
+  }
+
+  .googleIcon {
+    font-family: 'Barlow', sans-serif; /* Add this line */
   }
 
   

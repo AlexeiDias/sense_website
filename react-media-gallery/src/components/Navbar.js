@@ -14,7 +14,7 @@ const CustomNavbar = () => {
           </Col>
           <Col xs={12} md={3} className="logo-section">
             <img
-              src="/logo13.png"
+              src="/head.png"
               className="logo"
               alt="Your Brand Logo"
              
