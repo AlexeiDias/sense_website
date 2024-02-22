@@ -11,17 +11,17 @@ import RealStateHighLights from './components/RealStateHighLights';
 import DevelopmentProcess from './components/DevelopmentProcess';
 import EssentialFuture from './components/EssentialFuture';
 import RealStatePack from './components/RealStatePack';
-import BusinessPack from './components/BusinessPack';
-import VirtualStorePack from './components/VirtualStorePack';
+
+
 import PeopleComponent from './components/PeopleComponent';
 import PeoplePack from './components/PeoplePack';
 import HospitalityHighLights from './components/HospitalityHighLights'
 import PeopleHighLights from './components/PeopleHighLights';
 import EssentialsTitle from './components/EssentialsTitle';
-import ResidentialPricingTitle from './components/ResidentialPricingTitle';
-import BusinessPackTitle from './components/BusinessPackTitle';
-import VirtualStoreTitle from './components/VirtualStoreTitle';
-import PeopleScanningTitle from './components/PeopleScanningTitle';
+
+
+
+
 import Footer from './components/Footer';
 import IndividualServicesPricingTitle from './components/IndividualServicesPricingTitle';
 import IndividualServicesPricing from './components/IndividualServicesPricing';
@@ -45,6 +45,14 @@ import ConstructionArchitectureHighLights from './components/ConstructionArchite
 import Education from './components/Education';
 import EducationHighLights from './components/EducationHighLights';
 import RetailPack from './components/RetailPack';
+import MuseumsGalleriesPack from './components/MuseumsGalleriesPack'
+import HospitalityPack from './HospitalityPack';
+import EventVenuesPack from './HospitalityPack';
+import TourismPack from './TourismPack';
+import FitnessSpaPack from './FitnessSpaPack';
+import AutomotivePack from './components/AutomotivePack';
+import ConstructionArchitecturePack from './components/ConstructionArchitecturePack';
+import EducationPack from './components/EducationPack';
 
 
 
@@ -53,53 +61,71 @@ function App() {
 
   return (
     <div className="App">
+      {/* Include NavBar and Navigation here*/}
       <CustomNavbar />
       <SecondaryNavbar />
+      {/* Include the Main video here */}
       <VideoJumbotron />
-      <AboutUsText /> {/* Include the About Us text area here */}
-     
-     
-    
+      {/* Include the About Us text area here */}
+      <AboutUsText /> 
+     {/* Include the text for the industries introduction here */}
       <IndustriesIntro />
+      {/* Include Retail area here */}
       <Retail />
       <RetailHighLights />
       <RetailPack />
+      {/* Include Real State area here */}
       <RealState />
       <RealStateHighLights />
       <RealStatePack />
+      {/* Include Museum and Galleries area here */}
       <MuseumsGalleries />
       <MuseumsGalleriesHighLights />
+      <MuseumsGalleriesPack />
+      {/* Include Hospitality area here */}
       <Hospitality />
       <HospitalityHighLights />
+      <HospitalityPack />
+      {/* Include Real State area here */}
       <EventVenues />
       <EventVenuesHighLights />
+      <EventVenuesPack />
+      {/* Include Tourism area here */}
       <Tourism />
       <TourismHighLights />
+      <TourismPack />
+      {/* Include Fitness and Spa area here */}
       <FitnessSpa />
       <FitnessSpaHighLights />
+      <FitnessSpaPack />
+      {/* Include Automotive area here */}
       <Automotive />
       <AutomotiveHighLights />
+      <AutomotivePack />
+      {/* Include Construction and Architecture area here */}
       <ConstructionArchitecture />
       <ConstructionArchitectureHighLights />
+      <ConstructionArchitecturePack />
+      {/* Include Education area here */}
       <Education />
       <EducationHighLights />
+      <EducationPack />
+      {/* Include People Component area here */}
       <PeopleComponent />
       <PeopleHighLights />
       <PeoplePack />
+      {/* Include Development area here */}
       <DevelopmentProcess />
+      {/* Include Essentials area here */}
       <EssentialsTitle />
       <EssentialFuture />
-      <ResidentialPricingTitle />
       
-      <BusinessPackTitle />
-      <BusinessPack />
-      <VirtualStoreTitle />
-      <VirtualStorePack />
-      <PeopleScanningTitle />
      
+    
+      {/* Include Individual Services area here */}
       <IndividualServicesPricingTitle />
       <IndividualServicesPricing />
-      
+      {/* Include Footer area here */}
       <Footer />
       {/* Other components */}
     </div>

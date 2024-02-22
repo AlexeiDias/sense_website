@@ -5,7 +5,7 @@ import './Navbar.css';
 const CustomNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Container className="mx-auto">
+      <div className="navContainer">
         <Row className="align-items-center">
           <Col xs={12} md={4} className="brand-section">
             <Navbar.Brand href="#home">
@@ -26,7 +26,7 @@ const CustomNavbar = () => {
           
          
         </Row>
-      </Container>
+      </div>
     </Navbar>
   );
 };

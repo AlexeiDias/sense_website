@@ -3,6 +3,8 @@
   width: 100%;
 }
 
+
+
 /* Brand section */
 .brand-section .navbar-brand {
   display: flex;
@@ -30,6 +32,10 @@
 .logo-section .logo {
   width: 200px; /* Adjusted logo size */
   height: auto; /* Maintain aspect ratio */
+}
+
+.navContainer {
+  padding-top: 0px;
 }
 
 /* Responsive adjustments for smaller screens */

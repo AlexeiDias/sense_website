@@ -1,0 +1,38 @@
+body {
+    font-family: 'Barlow', sans-serif; /* Add this line */
+  }
+  
+  .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .titleColor {
+      color: #7b0e7d;
+      
+    }
+  
+  .iconColor {
+    color: #8cd2cc;
+  }
+  
+  p {
+      
+      flex: 1; /* Takes up the other half of the space */
+      max-width: 50%; /* Maximum width of 50% */
+      /* Your existing styles */
+      padding: 30px; /* Adjust padding as needed */
+      margin-top: 0; /* Reset the top margin if not needed */
+      
+      color: #333; /* Dark text color for readability */
+      text-align: justify;
+      opacity: 0.8; /* Adjust opacity as needed */
+    }
+  
+    .googleIcon {
+      font-family: 'Barlow', sans-serif; /* Add this line */
+    }
+  
+    
+  
+  
