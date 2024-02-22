@@ -44,6 +44,7 @@ import ConstructionArchitecture from './components/ConstructionArchitecture';
 import ConstructionArchitectureHighLights from './components/ConstructionArchitectureHighLights';
 import Education from './components/Education';
 import EducationHighLights from './components/EducationHighLights';
+import RetailPack from './components/RetailPack';
 
 
 
@@ -62,7 +63,7 @@ function App() {
       <IndustriesIntro />
       <Retail />
       <RetailHighLights />
-      
+      <RetailPack />
       <RealState />
       <RealStateHighLights />
       <RealStatePack />
