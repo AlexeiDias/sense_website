@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import CustomNavbar from './components/Navbar';
-import SecondaryNavbar from './components/SecondaryNavbar';
+import NavTop from './components/NavTop';
+
+
 import VideoJumbotron from './components/VideoJumbotron'; // Import the new Jumbotron component
 import AboutUsText from './components/AboutUsText'; // Import the new text area component
 
-import Business from './components/IndustriesIntro';
+
 import Hospitality from './components/Hospitality'
 import RealState from './components/RealState';
 import RealStateHighLights from './components/RealStateHighLights';
@@ -18,10 +19,6 @@ import PeoplePack from './components/PeoplePack';
 import HospitalityHighLights from './components/HospitalityHighLights'
 import PeopleHighLights from './components/PeopleHighLights';
 import EssentialsTitle from './components/EssentialsTitle';
-
-
-
-
 import Footer from './components/Footer';
 import IndividualServicesPricingTitle from './components/IndividualServicesPricingTitle';
 import IndividualServicesPricing from './components/IndividualServicesPricing';
@@ -62,12 +59,15 @@ function App() {
   return (
     <div className="App">
       {/* Include NavBar and Navigation here*/}
-      <CustomNavbar />
-      <SecondaryNavbar />
+      
+   
+      <NavTop />
       {/* Include the Main video here */}
       <VideoJumbotron />
       {/* Include the About Us text area here */}
       <AboutUsText /> 
+      {/* Include Development area here */}
+      <DevelopmentProcess />
      {/* Include the text for the industries introduction here */}
       <IndustriesIntro />
       {/* Include Retail area here */}
@@ -114,8 +114,7 @@ function App() {
       <PeopleComponent />
       <PeopleHighLights />
       <PeoplePack />
-      {/* Include Development area here */}
-      <DevelopmentProcess />
+      
       {/* Include Essentials area here */}
       <EssentialsTitle />
       <EssentialFuture />

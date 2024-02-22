@@ -2,10 +2,6 @@ body {
   font-family: 'Barlow', sans-serif; /* Add this line */
 }
 
-.container{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
 
 .titleColor {
     color: #7b0e7d;
