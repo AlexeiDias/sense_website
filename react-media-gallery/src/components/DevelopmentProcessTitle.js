@@ -4,12 +4,12 @@ import './Styles.css';
 
 
 
-const EssentialsTitle = () => {
+const DevProcTitle = () => {
   return (
-    <Container className='container-margin-top-bottom' id='essential-features'>
+    <Container className='titleContainer container-margin-top-bottom' >
       <Row className="align-items-center">
       <Col className='container' md={6}>
-      <h2 className="text-center mb-4 titleColor">Essential Features</h2>
+      <h2 className="text-center mb-4 titleColor">Development Process</h2>
       
             
         </Col> 
@@ -21,4 +21,4 @@ const EssentialsTitle = () => {
       );
     };
     
-    export default EssentialsTitle;
+    export default DevProcTitle;

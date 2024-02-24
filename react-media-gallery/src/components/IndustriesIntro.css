@@ -1,3 +1,7 @@
+.container {
+  margin-top:0px;
+}
+
 /* Add responsive behavior */
 @media (max-width: 768px) {
     .media-container {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Styles.css';
-import './EventVenues.css';
+
 
 
 const EventVenues = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='event'>
       <Row className="align-items-center">
       <Col md={6} className="text-center">
         <h1><i class="material-symbols-outlined iconColor">

@@ -5,15 +5,9 @@ import './Styles.css';
 
 const Automotive = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='automotive'>
       <Row className="align-items-center">
-      <Col md={6} className="text-center">
-        <h1><i class="material-symbols-outlined iconColor">
-account_balance
-</i></h1>
-          <h2 className='titleColor'>Automotive Showrooms</h2>
-          <p>Virtual tour technology is making significant inroads into the automotive showroom industry, transforming the way customers interact with vehicles and enhancing the overall buying experience.</p>
-        </Col>
+      
       
         <Col md={6}>
           <iframe 
@@ -25,7 +19,13 @@ account_balance
             allow="xr-spatial-tracking">
           </iframe>
         </Col>
-        
+        <Col md={6} className="text-center">
+        <h1><i class="material-symbols-outlined iconColor">
+account_balance
+</i></h1>
+          <h2 className='titleColor'>Automotive Showrooms</h2>
+          <p>Virtual tour technology is making significant inroads into the automotive showroom industry, transforming the way customers interact with vehicles and enhancing the overall buying experience.</p>
+        </Col>
        
       </Row>
     </Container>

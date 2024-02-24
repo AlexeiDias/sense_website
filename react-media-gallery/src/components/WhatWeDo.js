@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Styles.css';
-import './AboutUsText.css';
 
 
-const AboutUs = () => {
+
+const WhatWeDo = () => {
   return (
-    <Container className='container media-container'>
+    <Container className='container media-container container-margin-top-bottom' id='WhatWeDo'>
       <Row className="align-items-center">
         <Col className='image-column' md={6}>
           <img 
@@ -33,4 +33,4 @@ With a footprint both in the US and internationally, we pride ourselves on broad
   );
 };
 
-export default AboutUs;
+export default WhatWeDo;

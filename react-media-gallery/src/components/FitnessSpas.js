@@ -6,7 +6,7 @@ import './Styles.css';
 
 const FitnessSpa = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='fitness'>
       <Row className="align-items-center">
       <Col md={6} className="text-center">
         <h1><i class="material-symbols-outlined iconColor">

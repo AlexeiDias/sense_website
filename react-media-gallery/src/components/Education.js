@@ -5,15 +5,9 @@ import './Styles.css'
 
 const Education= () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='education'>
       <Row className="align-items-center">
-      <Col className='container text-center' md={6}>
-        <h1><i class="material-symbols-outlined iconColor">
-account_balance
-</i></h1>
-          <h2 className='titleColor'>Education</h2>
-          <p>Virtual tour technology has made significant inroads into the education industry, offering unique opportunities for engagement, exploration, and learning.</p>
-        </Col>
+      
       
         <Col md={6}>
           <iframe 
@@ -25,7 +19,13 @@ account_balance
             allow="xr-spatial-tracking">
           </iframe>
         </Col>
-        
+        <Col className='container text-center' md={6}>
+        <h1><i class="material-symbols-outlined iconColor">
+account_balance
+</i></h1>
+          <h2 className='titleColor'>Education</h2>
+          <p>Virtual tour technology has made significant inroads into the education industry, offering unique opportunities for engagement, exploration, and learning.</p>
+        </Col>
        
       </Row>
     </Container>

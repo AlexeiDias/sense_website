@@ -1,12 +1,13 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './DevelopmentProcess.css'
+import './Styles.css';
+import './DevelopmentProcess.css';
 
 
 const DevelopmentProcess = () => {
   return (
-    <Container className="my-5">
-      <h2 className="text-center mb-4 title">Development Process</h2>
+    <Container className="my-5 DevPro-top-margin" id='development'>
+     
       <Row>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-webcam-fill"></i></h1>

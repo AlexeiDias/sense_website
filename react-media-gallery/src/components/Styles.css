@@ -1,7 +1,15 @@
-body {
-  font-family: 'Barlow', sans-serif; /* Add this line */
-}
 
+
+.container-margin-top-bottom {
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+.backGroundImage {
+  background-image: url('/react-media-gallery/public/pattern.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
 
 .titleColor {
     color: #7b0e7d;
@@ -13,7 +21,7 @@ body {
 }
 
 p {
-    
+    font-family: 'Barlow', sans-serif; /* Add this line */
     flex: 1; /* Takes up the other half of the space */
     max-width: 50%; /* Maximum width of 50% */
     /* Your existing styles */

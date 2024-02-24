@@ -6,7 +6,7 @@ import './Styles.css';
 
 const Hospitality = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='hospitality'>
       <Row className="align-items-center">
         <Col md={6}>
           <iframe 

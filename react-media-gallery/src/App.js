@@ -3,12 +3,13 @@ import NavTop from './components/NavTop';
 
 
 import VideoJumbotron from './components/VideoJumbotron'; // Import the new Jumbotron component
-import AboutUsText from './components/AboutUsText'; // Import the new text area component
+import WhatWeDo from './components/WhatWeDo'; // Import the new text area component
 
 
 import Hospitality from './components/Hospitality'
 import RealState from './components/RealState';
 import RealStateHighLights from './components/RealStateHighLights';
+import DevProcTitle from './components/DevelopmentProcessTitle';
 import DevelopmentProcess from './components/DevelopmentProcess';
 import EssentialFuture from './components/EssentialFuture';
 import RealStatePack from './components/RealStatePack';
@@ -20,8 +21,8 @@ import HospitalityHighLights from './components/HospitalityHighLights'
 import PeopleHighLights from './components/PeopleHighLights';
 import EssentialsTitle from './components/EssentialsTitle';
 import Footer from './components/Footer';
-import IndividualServicesPricingTitle from './components/IndividualServicesPricingTitle';
-import IndividualServicesPricing from './components/IndividualServicesPricing';
+
+
 import Retail from './components/Retail';
 import MuseumsGalleries from './components/MuseumsGalleries';
 import RetailHighLights from './components/RetailHighLights';
@@ -44,12 +45,14 @@ import EducationHighLights from './components/EducationHighLights';
 import RetailPack from './components/RetailPack';
 import MuseumsGalleriesPack from './components/MuseumsGalleriesPack'
 import HospitalityPack from './HospitalityPack';
-import EventVenuesPack from './HospitalityPack';
+import EventVenuesPack from './components/EventVenuesPack';
 import TourismPack from './TourismPack';
 import FitnessSpaPack from './FitnessSpaPack';
 import AutomotivePack from './components/AutomotivePack';
 import ConstructionArchitecturePack from './components/ConstructionArchitecturePack';
 import EducationPack from './components/EducationPack';
+import Testimonies from './components/Testimonies'
+import AboutUs from './components/AboutUs';
 
 
 
@@ -65,8 +68,9 @@ function App() {
       {/* Include the Main video here */}
       <VideoJumbotron />
       {/* Include the About Us text area here */}
-      <AboutUsText /> 
+      <WhatWeDo /> 
       {/* Include Development area here */}
+      <DevProcTitle />
       <DevelopmentProcess />
      {/* Include the text for the industries introduction here */}
       <IndustriesIntro />
@@ -118,12 +122,10 @@ function App() {
       {/* Include Essentials area here */}
       <EssentialsTitle />
       <EssentialFuture />
-      
-     
-    
-      {/* Include Individual Services area here */}
-      <IndividualServicesPricingTitle />
-      <IndividualServicesPricing />
+       {/* Include testimonies area here */}
+      <Testimonies />
+      {/* Include AboutUs area here */}
+      <AboutUs />
       {/* Include Footer area here */}
       <Footer />
       {/* Other components */}

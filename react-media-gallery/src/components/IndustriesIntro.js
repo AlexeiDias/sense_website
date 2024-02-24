@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Styles.css';
-import './IndustriesIntro.css';
+
 
 
 const IndustriesIntro = () => {
   return (
-    <Container className='container media-container' >
+    <Container className='container media-container container-margin-top-bottom' id='introduction' >
       <Row className="align-items-center">
         
         <Col className='container' md={6}>

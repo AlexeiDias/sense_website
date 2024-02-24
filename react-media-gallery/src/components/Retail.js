@@ -5,7 +5,7 @@ import './Hospitality.css'
 
 const Retail = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='retail'>
       <Row className="align-items-center">
       <Col className='container text-center' md={6}>
         <h1><i class="bi bi-shop-window iconColor"></i></h1>

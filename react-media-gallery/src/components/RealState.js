@@ -4,7 +4,7 @@ import './Styles.css'
 
 const RealState = () => {
   return (
-    <Container>
+    <Container className='container-margin-top-bottom' id='real'>
       <Row className="align-items-center">
         
       <Col md={6}>

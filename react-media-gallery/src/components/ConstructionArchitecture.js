@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Hospitality.css'
+import './Styles.css';
 
 
 const ConstructionArchitecture = () => {
   return (
-    <Container >
+    <Container className='container-margin-top-bottom' id='construction'>
       <Row className="align-items-center">
       <Col className='container text-center' md={6}>
         <h1><i class="material-symbols-outlined iconColor">

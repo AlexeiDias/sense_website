@@ -1,22 +1,21 @@
 import React from 'react';
+import { Navbar, Container, Row, Col } from 'react-bootstrap';
 
-
-
-const Footer = () => {
-  return (
-
-<footer className="py-3 my-4">
-    <ul className="nav justify-content-center border-bottom pb-3 mb-3">
-      <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Home</a></li>
-      <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Features</a></li>
-      <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li className="nav-item"><a href="#" className="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-    <p className="text-center text-body-secondary">© 2023 Company, Inc</p>
-  </footer>
-
-);
-};
-
-export default Footer;
+const NavTop = () => {
+    return (
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Virtual Sense</a>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      
+      <span class="navbar-text">
+      Designed and built with all the love in the world by the Virtual Sense team.
+      </span>
+    </div>
+  </div>
+</nav>
+    );
+  };
+  
+  export default NavTop;

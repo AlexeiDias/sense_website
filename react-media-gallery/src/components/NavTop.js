@@ -16,18 +16,18 @@ const NavTop = () => {
             Industries
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Introduction</a></li>
-            <li><a class="dropdown-item" href="#">Real State</a></li>
-            <li><a class="dropdown-item" href="#">Retail</a></li>
-            <li><a class="dropdown-item" href="#">Museums and Galleries</a></li>
-            <li><a class="dropdown-item" href="#">Hospitality</a></li>
-            <li><a class="dropdown-item" href="#">Event Venues</a></li>
-            <li><a class="dropdown-item" href="#">Tourism</a></li>
-            <li><a class="dropdown-item" href="#">Fitness and Spa</a></li>
-            <li><a class="dropdown-item" href="#">Automotive Showrooms</a></li>
-            <li><a class="dropdown-item" href="#">Construction and Architecture</a></li>
-            <li><a class="dropdown-item" href="#">Education</a></li>
-            <li><a class="dropdown-item" href="#">People Scanning</a></li>
+            <li><a class="dropdown-item" href="#introduction">Introduction</a></li>
+            <li><a class="dropdown-item" href="#real">Real State</a></li>
+            <li><a class="dropdown-item" href="#retail">Retail</a></li>
+            <li><a class="dropdown-item" href="#museums">Museums and Galleries</a></li>
+            <li><a class="dropdown-item" href="#hospitality">Hospitality</a></li>
+            <li><a class="dropdown-item" href="#event">Event Venues</a></li>
+            <li><a class="dropdown-item" href="#tourism">Tourism</a></li>
+            <li><a class="dropdown-item" href="#fitness">Fitness and Spa</a></li>
+            <li><a class="dropdown-item" href="#automotive">Automotive Showrooms</a></li>
+            <li><a class="dropdown-item" href="#construction">Construction and Architecture</a></li>
+            <li><a class="dropdown-item" href="#education">Education</a></li>
+            <li><a class="dropdown-item" href="#people-scanning">People Scanning</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -35,12 +35,12 @@ const NavTop = () => {
             Check it out
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">What we Do</a></li>
-            <li><a class="dropdown-item" href="#">How it works</a></li>
-            <li><a class="dropdown-item" href="#">Essential Features</a></li>
-            <li><a class="dropdown-item" href="#">Individual Services Pricing</a></li>
-            <li><a class="dropdown-item" href="#">Customers testemonies</a></li>
-            <li><a class="dropdown-item" href="#">About Us</a></li>
+            <li><a class="dropdown-item" href="#WhatWeDo">What we Do</a></li>
+            <li><a class="dropdown-item" href="#development">How it works</a></li>
+            <li><a class="dropdown-item" href="#features">Essential Features</a></li>
+            <li><a class="dropdown-item" href="#individual-pricing">Individual Services Pricing</a></li>
+            <li><a class="dropdown-item" href="#Testimonies">Customers testemonies</a></li>
+            <li><a class="dropdown-item" href="#about-us">About Us</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">

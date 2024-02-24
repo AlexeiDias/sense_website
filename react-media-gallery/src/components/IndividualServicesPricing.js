@@ -1,10 +1,11 @@
 import React from 'react';
 import {Row} from 'react-bootstrap';
-import './WhatsIncluded.css';
+import './Styles.css';
+
 
 const IndividualServicesPricing = () => {
   return (
-    <div className="CommercialPricing">
+    <div className="container-margin-top-bottom" id='individual-pricing'>
   <div className="card text-center">
   <div className="card-header">
   
