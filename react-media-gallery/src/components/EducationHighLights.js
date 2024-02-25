@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './BusinessComponent.css';
-import './Styles.css'
+import './Styles.css';
+import './ShowMoreEffect.css';
 
-const EducationHighLights= () => {
+const EducationHighLights = () => {
+  // State to control the visibility of the content
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to toggle the visibility state
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <Container className="my-5">
-      <h3 className="text-center mb-4 titleColor">Here are five highlights of its application</h3>
+      <h3 
+        className="text-center mb-4 titleColor" 
+        onClick={toggleVisibility} 
+        style={{ cursor: 'pointer' }}
+      >
+        Click here to see five highlights of its application, suggested service package, and $price.
+      </h3>
      
-      <Row>
+      {/* Conditional rendering based on isVisible state */}
+      <div className={isVisible ? 'show' : 'hidden'}>
+        <Row>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-house-up-fill iconColor"></i></h1>
           <h2 className='titleColor'>Enhanced Campus Visits</h2>
@@ -36,7 +53,41 @@ const EducationHighLights= () => {
           <h2 className='titleColor'>Orientation and Onboarding</h2>
           <p id='people'> For new students, virtual tours can be an essential part of the orientation process, helping them navigate the complexities of campus life, understand where key facilities are located, and start building a sense of community before they arrive on campus.</p>
         </Col>
+        </Row>
+        <Row  className="g-4">
+      <div className="card text-center">
+  <div className="card-header">
+  
+  </div>
+  <div className="card-body">
+    <h5 className="card-title"> Education Pack
+
+</h5>
+<p className='whatsIncluded'>
+        <h4>What’s Included:</h4>
+        <ul >
+        <li >3D Virtual Tour + links to promote your space online</li>
+        <li > HIGH RES PHOTOS</li>
+        <li >3 Mattertags </li>
+        <li >GOOGLE STREET VIEW</li>
+        <li>QR Code to add your 3D Virtual Tour to your printed materials</li>
+        <li>Social Media folder with 360 views and more</li>
+        <li id="commercial-real-state">6 months of FREE cloud hosting</li>
+        <li>Add: Promo Video to provide an overview of the institution and its programs.</li> 
+        <li>Up to 2,000 SF + $100 for each additional 1,000 SF</li>
+        </ul>
+       </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div className="card-footer text-body-secondary">
+  <h5 className="card-text">Price: $399 (Base services + Promo Video $99 + $50 for the added value of a comprehensive educational package)
+</h5>
+  
+  </div>
+</div>
       </Row>
+        
+      </div>
       <p>By leveraging virtual tour technology, the education industry can provide more engaging, accessible, and comprehensive experiences for students, enhancing their learning journey and supporting their academic success.</p>
     </Container>
   );

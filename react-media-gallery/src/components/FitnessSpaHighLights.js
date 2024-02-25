@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import './Styles.css'
+import './Styles.css';
 
-const FitnessSpa= () => {
+const FitnessSpa = () => {
+  // State to control the visibility of the content
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to toggle the visibility state
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <Container className="my-5">
-      <h3 className="text-center mb-4 titleColor">Here are five highlights of its utilization</h3>
+      <h3 
+        className="text-center mb-4 titleColor" 
+        onClick={toggleVisibility} 
+        style={{ cursor: 'pointer' }}
+      >
+        Click here to see five highlights of its utilization, suggested service pack, and $price.
+      </h3>
      
-      <Row>
+      {/* Conditional rendering based on isVisible state */}
+      <div className={isVisible ? 'show' : 'hidden'}>
+        <Row>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-house-up-fill iconColor"></i></h1>
           <h2 className='titleColor'>Enhanced Facility Showcasing</h2>
@@ -35,7 +51,9 @@ const FitnessSpa= () => {
           <h2 className='titleColor'>Marketing and Social Sharing</h2>
           <p id='people'> Virtual tours can be easily integrated into a fitness center or spa's website and shared on social media platforms, enhancing online marketing efforts. They provide engaging content that potential clients can interact with and share with their networks, increasing the facility's visibility and attracting new clientele through word-of-mouth.</p>
         </Col>
-      </Row>
+        </Row>
+        
+      </div>
       <p>Overall, virtual tour technology in the fitness and spa industry not only enhances marketing strategies and client engagement but also provides a powerful tool for businesses to showcase their best features, build trust with potential clients, and stand out in a competitive market.</p>
     </Container>
   );

@@ -4,6 +4,7 @@ import './WhatsIncluded.css';
 
 const PeoplePack = () => {
   return (
+    <Row>
     <div className="CommercialPricing">
   <div className="card text-center">
   <div className="card-header">
@@ -38,7 +39,7 @@ const PeoplePack = () => {
       
       
     </div>
-    
+    </Row>
   );
 };
 

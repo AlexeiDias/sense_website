@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Styles.css';
 import './HospitalityHighLights.css';
-
+import './ShowMoreEffect.css';
 
 const HospitalityHighLights = () => {
+  // State to control the visibility of the content
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Function to toggle the visibility state
+  const toggleVisibility = () => {
+    setIsVisible(!isVisible);
+  };
+
   return (
     <Container className="my-5">
-      <h3 className="text-center mb-4 titleColor">How Virtual Tour can help</h3>
-      <Row>
+      <h3 
+        className="text-center mb-4 titleColor" 
+        onClick={toggleVisibility} 
+        style={{ cursor: 'pointer' }}
+      >
+        Click here to know how Virtual Tour can help, Suggested Service Package, and $price.
+      </h3>
+      {/* Conditional rendering based on isVisible state */}
+      <div className={isVisible ? 'show' : 'hidden'}>
+        <Row>
         <Col md={4} className="text-center">
         <h1><i class="bi bi-person-hearts iconColor"></i></h1>
           <h2 className='titleColor'>Enhanced Engagement</h2>
@@ -36,7 +52,42 @@ const HospitalityHighLights = () => {
           <h2 className='titleColor'>Marketing Tool</h2>
           <p id="real-state">They can be shared on social media platforms, incorporated into marketing campaigns, and used in email promotions, serving as a powerful marketing tool to attract a wider audience.</p>
         </Col>
+        </Row>
+        <Row  className="g-4">
+      <div className="card text-center">
+  <div className="card-header">
+  
+  </div>
+  <div className="card-body">
+    <h5 className="card-title"> Hospitality Pack
+
+</h5>
+<p className='whatsIncluded'>
+        <h4>What’s Included:</h4>
+        <ul >
+        <li >3D Virtual Tour + links to promote your space online</li>
+        <li > HIGH RES PHOTOS</li>
+        <li >3 Mattertags </li>
+        <li >GOOGLE STREET VIEW</li>
+        <li>QR Code to add your 3D Virtual Tour to your printed materials</li>
+        <li>Social Media folder with 360 views and more</li>
+        <li id="commercial-real-state">6 months of FREE cloud hosting</li>
+        <li>Add: Promo Video to highlight amenities and unique property features.</li>  
+        <li></li>
+        <li>Up to 2,000 SF + $100 for each additional 1,000 SF</li>
+        </ul>
+       </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div className="card-footer text-body-secondary">
+  <h5 className="card-text">Price: $449 (Base services + Promo Video $99 + $50 for the added value of a comprehensive hospitality package)
+</h5>
+  
+  </div>
+</div>
       </Row>
+      
+      </div>
     </Container>
   );
 };

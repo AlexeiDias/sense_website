@@ -10,7 +10,7 @@ const Retail = () => {
       <Col className='container text-center' md={6}>
         <h1><i class="bi bi-shop-window iconColor"></i></h1>
           <h2 className='titleColor'>Retail</h2>
-          <p>Enabling customers to navigate through virtual stores, view products in 3D, and make purchases, transforming the online shopping experience.</p>
+          <p>Enabling customers to  <span style={{fontWeight: 'bold', fontSize: '20px'}}>navigate</span> through virtual stores,  <span style={{fontWeight: 'bold', fontSize: '20px'}}>view products</span> in 3D, and  <span style={{fontWeight: 'bold', fontSize: '20px'}}>make purchases</span>, transforming the online shopping experience.</p>
         </Col>
         <Col md={6}>
           <iframe 
