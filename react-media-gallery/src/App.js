@@ -51,7 +51,6 @@ import EducationHighLights from './components/EducationHighLights';
 
 
 
-import Testimonies from './components/Testimonies'
 import AboutUs from './components/AboutUs';
 
 
@@ -123,7 +122,7 @@ function App() {
       <EssentialsTitle />
       <EssentialFuture />
        {/* Include testimonies area here */}
-      <Testimonies />
+      
       {/* Include AboutUs area here */}
       <AboutUs />
       {/* Include Footer area here */}
